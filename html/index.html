@@ -5,10 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/js/script.js">
+    <script rel="stylesheet" href="../assets/js/script.js"></script>
     <title>Calculator</title>
 </head>
 <body>
-    
+    <form name="calc" action="">
+        <div class="calculator" id="calculator">
+
+            <input type="text" id="visor" name="visor">
+
+            <div id="primeira" class="primeira">
+                <input type="button" value="7" class="btn-border" onclick="button(value)">
+                <input type="button" value="8" class="btn-border" onclick="button(value)">
+                <input type="button" value="9" class="btn-border" onclick="button(value)">
+                <input type="button" value="/" class="btn-border" onclick="button(value)">
+            </div>
+
+            <div id="segunda" class="segunda">
+                <input type="button" value="4" class="btn-border" onclick="button(value)">
+                <input type="button" value="5" class="btn-border" onclick="button(value)">
+                <input type="button" value="6" class="btn-border" onclick="button(value)">
+                <input type="button" value="*" class="btn-border" onclick="button(value)">
+            </div>
+
+            <div id="terceira" class="terceira">
+                <input type="button" value="1" class="btn-border" onclick="button(value)">
+                <input type="button" value="2" class="btn-border" onclick="button(value)">
+                <input type="button" value="3" class="btn-border" onclick="button(value)">
+                <input type="button" value="-" class="btn-border" onclick="button(value)">
+            </div>
+
+            <div id="quarta" class="quarta">
+                <input type="button" value="C" class="btn-border" onclick="reset">
+                <input type="button" value="0" class="btn-border" onclick="button(value)">
+                <input type="button" value="=" class="btn-border" onclick="calculation">
+                <input type="button" value="+" class="btn-border" onclick="button(value)">
+            </div>
+
+        </div>
+    </form>
 </body>
 </html>
