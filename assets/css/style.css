@@ -18,7 +18,7 @@ form {
     outline: 2.5px solid #000;
     border-radius: 8px;
     max-width: 50vw;
-    max-height:35vh;
+    max-height:fit-content;
     position: absolute;
     top: 30%;
     bottom: 30% ;
@@ -51,6 +51,15 @@ form {
     margin-bottom: 3px;
 }
 
-@media screen (max-width: 410px) {
+@media screen and (max-width: 410px) {
     
+    .btn-border {
+        width: 30px;
+        height: 30px;
+    }
+
+    #visor{
+        height: 30px;
+    }
+
 }
