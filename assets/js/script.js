@@ -1,7 +1,12 @@
 var valor
-function button(num){
-    valor = document.oncancel.visor.value += num
+var resultado
+function botao(num){
+    valor = document.calc.visor.value += num
 }
-function reset(){
-    document.calc.visor
+function reseta(){
+    document.calc.visor.value = ''
+}
+function calcula(){
+    resultado = eval(valor)
+    document.calc.visor.value = resultado
 }
